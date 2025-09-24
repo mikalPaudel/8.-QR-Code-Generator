@@ -17,8 +17,10 @@
     top: 50%;
     left: 50%;
     position: absolute;
-    background: linear-gradient(135deg,#ffffff, #cfcfcf );
     transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #3d9690, #000000);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: white;
  }
  h1{
     font-size: 20px;
@@ -26,6 +28,7 @@
     word-wrap: none;
  }
  input{
+    background: linear-gradient(135deg, #cfcfcf, #ffffff);
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
@@ -34,6 +37,14 @@
  input:focus{
     outline: none;
     border: 2px solid #3d9690;
+ }
+ .qr{
+    border: 2px solid #3d9690;
+    display: none;
+    margin: 10px auto;
+    padding: 10px;
+    width: fit-content;
+    background: white;
  }
  button{
     padding: 10px;
