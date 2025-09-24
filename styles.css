@@ -21,7 +21,7 @@
     transform: translate(-50%, -50%);
  }
  h1{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     word-wrap: none;
  }
@@ -29,22 +29,24 @@
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
+    width: 100%;
  }
-.qr{
-    display: none;
-}
+ input:focus{
+    outline: none;
+    border: 2px solid #3d9690;
+ }
  button{
     padding: 10px;
     margin: 10px;
     border-radius: 50px;
-    background: #dadada;
+    background: #7a7a7a;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 650;
+    color: white;
  }
  button:hover{
     cursor: pointer;
     transition: 3ms ease-in-out;
  }
  button:active{
-    transition: 5ms ease-in-out;
- }
+    transform: scale(0.98);}
