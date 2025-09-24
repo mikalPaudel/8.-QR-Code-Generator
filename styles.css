@@ -2,6 +2,7 @@
     font-family: 'Courier New', Courier, monospace;
     margin: none;
     padding:none;
+    box-sizing: border-box;
 }
  body{
     background: linear-gradient(135deg, #fff, #000);
@@ -10,17 +11,18 @@
  .container{
     border: 1px solid;
     border-radius: 15px;
-    padding: 10px;
-    margin: 10px;
+    padding: 25px;
     text-align: center;
-    width: 340px;
-    background: #ffffff;
-    /* display: flex;
-    flex-direction: column; */
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    background: linear-gradient(135deg,#ffffff, #cfcfcf );
+    transform: translate(-50%, -50%);
  }
  h1{
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     word-wrap: none;
  }
  input{
@@ -36,6 +38,8 @@
     margin: 10px;
     border-radius: 50px;
     background: #dadada;
+    font-size: 16px;
+    font-weight: 600;
  }
  button:hover{
     cursor: pointer;
