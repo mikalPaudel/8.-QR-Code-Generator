@@ -6,9 +6,8 @@ function qrCodeGenerator(){
 
     generateButton.addEventListener("click",()=>{
         let inputValue = inputField.value;
-        if(!inputValue) return; //if the input field is empty, return from here
+        if(!inputValue) return qrCodeContainer.style.display = "none"; //if the input field is empty, return from here
         generateButton.innerText = "Generating QR Code...";
-        //API - https://goqr.me/api/doc/create-qr-code/
         qrCodeImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${inputValue}`;
         qrCodeImage.onload = ()=>{
             qrCodeContainer.style.display = "block";
